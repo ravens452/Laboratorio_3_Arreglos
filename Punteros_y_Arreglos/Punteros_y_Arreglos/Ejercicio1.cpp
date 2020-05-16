@@ -13,20 +13,30 @@
 using namespace std;
 
 
-void copiar (char *s1, char *s2) //Creamos la Funcion con 2 entradas con Punteros, para poder modificar sus valores.
+int suma(int* array, int n)   //Entrada del array y el tamaño
 {
-    while (*s1!='\0'){ //Mientras no sea el final de la cadena.
-     *s2=*s1; s2++; s1++; //Cadena s2 recibira valor de s1 por iteracion.
+    int sumaArray=0;
+    for (int i = 0; i < n; i++) {
+        sumaArray += *(array+i);}
+    
+    return sumaArray;
+        
     }
-}
+    
+//    for (int i = 0; i < n; i++) { //Ordenamos usando comparacion de dos en dos usando punteros.
+//        *(array + i); //usamos auxiliar t
+//                *(array + i) = *(array + j);
+//                *(array + j) = t;
+//            }
+    
+//    for (i = 0; i < n; i++) //Imrpimiendo los resultados
+//        cout<<*(array + i)<<" ";
+//}
 
 
-int c = 0;
 int main(){
-    char a[50];
-    char b[50];
-    cout<<"Escriba la cadena a: "<<endl;cin>>a;
-    copiar(a, b);
-    cout<<b<<endl;
+    int arreglo[] = {3,1,8,4,5,9,7};
+    int tam = 7;
+    cout<<suma(arreglo, tam)<<endl;
     
 }

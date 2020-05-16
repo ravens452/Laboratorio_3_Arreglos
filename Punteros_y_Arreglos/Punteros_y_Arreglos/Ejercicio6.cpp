@@ -15,7 +15,7 @@ using namespace std;
 
 void copiar (char *s1, char *s2) //Creamos la Funcion con 2 entradas con Punteros, para poder modificar sus valores.
 {
-    while (*s1!='\0'){ //Mientras no sea el final de la cadena.
+    while (*s1 != '\0'){ //Mientras no sea el final de la cadena.
      *s2=*s1; s2++; s1++; //Cadena s2 recibira valor de s1 por iteracion.
     }
 }
@@ -27,6 +27,6 @@ int main(){
     char b[50];
     cout<<"Escriba la cadena a: "<<endl;cin>>a;
     copiar(a, b);
-    cout<<b<<endl;
-    
+    cout<<"La cadena copiada b es: "<<b<<endl;
 }
+//HECHO!!
