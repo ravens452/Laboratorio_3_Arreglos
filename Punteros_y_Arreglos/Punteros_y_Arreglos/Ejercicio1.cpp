@@ -15,6 +15,7 @@ using namespace std;
 
 int suma(int* array, int n)   //Entrada del array y el tamaño
 {
+    
     int sumaArray=0;
     for (int i = 0; i < n; i++) {
         sumaArray += *(array+i);}
@@ -22,20 +23,10 @@ int suma(int* array, int n)   //Entrada del array y el tamaño
     return sumaArray;
         
     }
-    
-//    for (int i = 0; i < n; i++) { //Ordenamos usando comparacion de dos en dos usando punteros.
-//        *(array + i); //usamos auxiliar t
-//                *(array + i) = *(array + j);
-//                *(array + j) = t;
-//            }
-    
-//    for (i = 0; i < n; i++) //Imrpimiendo los resultados
-//        cout<<*(array + i)<<" ";
-//}
 
 
 int main(){
-    int arreglo[] = {3,1,8,4,5,9,7};
+    int arreglo[] = {3,1,8,4,5,1,7};
     int tam = 7;
     cout<<suma(arreglo, tam)<<endl;
     
