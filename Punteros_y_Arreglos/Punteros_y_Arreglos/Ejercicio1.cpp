@@ -12,7 +12,6 @@
 #include <iostream>
 using namespace std;
 
-
 int suma(int* array, int n)   //Entrada del array y el tamaño
 {
     
@@ -23,8 +22,6 @@ int suma(int* array, int n)   //Entrada del array y el tamaño
     return sumaArray;
         
     }
-
-
 int main(){
     int arreglo[] = {3,1,8,4,5,1,7};
     int tam = 7;

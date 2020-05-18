@@ -13,12 +13,11 @@ int longitudArray(char *s1)
 {
     int n=0;
     while (*s1 != '\0') {
-        n++;s1++;longitudArray(s1);
+        n++;longitudArray(++s1);
     }
     return n;
 }
 int main(){
-
    char cadena[30];
    cout<<"¿Cuál es la cadena? "<<endl;
    cin>>cadena;
